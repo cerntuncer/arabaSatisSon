@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.main-header {
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(40, 40, 40, 0.5);
+    box-shadow: none;
+}
+
+.navbar.navbar-dark .navbar-brand {
+    color: #fff;
+}
+
+.navbar.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar.navbar-dark .navbar-nav .nav-link:hover {
+    color: #ddd;
+}
+
+.hero-section {
+    background: url('../img/araba.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero-section p {
+    font-size: 1.25rem;
+}
+
+.login-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.content .form-group {
+    margin-bottom: 1.5rem;
+
+}
+
+h3 {
+    margin-top: 20px;
+}
+
+h4 {
+    margin-top: 10px;
+    font-size: 1.25rem;
+}
+.form-check {
+    margin-bottom: 10px;
+    color: #1c1c1c;
+    margin-right: 310px;
+}
+.d-flex .sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #1c1c1c;
+    position: fixed;
+}
+
+.d-flex .sidebar .nav-link {
+    color: #fff;
+}
+
+.d-flex .sidebar .nav-link:hover {
+    color: #007bff;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-tabs .nav-link.active {
+    color: #007bff;
+    border-color: #007bff #007bff #fff;
+}
+
+.nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    color: #007bff;
+}
