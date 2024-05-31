@@ -26,7 +26,7 @@ return new class extends Migration
             $table->integer('vites_turu',);
             $table->integer('yakit_turu');
             $table->dateTime('ilana_cikma_tarihi');
-            $table->integer('status')->comment('0:pasif, 1:ilanda');
+            $table->boolean('status')->comment('0:pasif, 1:ilanda');
             $table->integer('fiyat');
             $table->text('description');
 

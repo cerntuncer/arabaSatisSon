@@ -15,8 +15,9 @@ return new class extends Migration
     {
         Schema::create('ilcelers', function (Blueprint $table) {
             $table->id();
-            $table->integer('sehir_id');
-            $table->integer('adi');
+            $table->unsignedBigInteger('sehir_id');
+            $table->string('adi');
+            $table->foreign('sehir_id')->on('sehirlers')->references('id')->onDelete('cascade');
             $table->softDeletes();
             $table->timestamps();
         });

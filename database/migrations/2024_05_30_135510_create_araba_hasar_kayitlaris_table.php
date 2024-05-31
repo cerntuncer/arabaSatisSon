@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('araba_hasar_kayitlari', function (Blueprint $table) {
             $table->id();
-            $table->date('tarih');
+            $table->dateTime('tarih');
             $table->integer('tramer');
             $table->softDeletes();
             $table->timestamps();

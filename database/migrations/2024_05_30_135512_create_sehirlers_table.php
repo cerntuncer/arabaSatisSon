@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('sehirlers', function (Blueprint $table) {
             $table->id();
             $table->tinyInteger('plaka_no');
-            $table->integer('adi');
+            $table->string('adi');
             $table->softDeletes();
             $table->timestamps();
         });
